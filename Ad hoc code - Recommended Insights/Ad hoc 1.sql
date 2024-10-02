@@ -1,14 +1,12 @@
-/* Store performance analysis */
-
-select 
- store_id, 
- city, 
- concat(round((sum(ir)/1000000),2), 'M') as Incremental_Revenue 
-from 
- revenue_ir_isu
-group by 
- store_id, 
- city
-order by 
- sum(ir) desc
-limit 10;
+SELECT 
+    store_id, 
+    city, 
+    CONCAT(ROUND((SUM(ir) / 1000000), 2), 'M') AS Incremental_Revenue 
+FROM 
+    revenue_ir_isu
+GROUP BY 
+    store_id, 
+    city
+ORDER BY 
+    SUM(ir) DESC
+LIMIT 10;
