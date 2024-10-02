@@ -1,13 +1,10 @@
-
-/* Promotion type analysis */
-
-select 
- Promo_type, 
- concat(round((sum(isu)/1000000),2), 'M') as incremental_sold_qty
-from 
- revenue_ir_isu
-group by 
- promo_type
-order by 
- sum(ir) asc
-limit 2;
+SELECT 
+    promo_type, 
+    CONCAT(ROUND((SUM(isu) / 1000000), 2), 'M') AS incremental_sold_qty 
+FROM 
+    revenue_ir_isu
+GROUP BY 
+    promo_type
+ORDER BY 
+    SUM(ir) ASC
+LIMIT 2;
