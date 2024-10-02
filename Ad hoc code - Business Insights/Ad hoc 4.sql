@@ -1,18 +1,18 @@
-with cte1 as (
- select  
-  category, 
-  sum(`quantity_sold(before_promo)`) as total_qty_sold_before_promo, 
-  sum(`quantity_sold(after_promo)`) as total_qty_sold_after_promo,
-  round((sum(isu)/sum(`quantity_sold(before_promo)`) *100),2) as isu_pct
- from 
-  revenue_ir_isu
- where 
-  campaign_name= "Diwali"
-group by  
-  category
+WITH cte1 AS (
+    SELECT  
+        category, 
+        SUM(`quantity_sold(before_promo)`) AS total_qty_sold_before_promo, 
+        SUM(`quantity_sold(after_promo)`) AS total_qty_sold_after_promo,
+        ROUND((SUM(isu) / SUM(`quantity_sold(before_promo)`) * 100), 2) AS isu_pct
+    FROM 
+        revenue_ir_isu
+    WHERE 
+        campaign_name = 'Diwali'
+    GROUP BY  
+        category
 )
-select 
- *, 
- rank() over(order by isu_pct desc) as ranking
-from 
- cte1;
+SELECT 
+    *, 
+    RANK() OVER (ORDER BY isu_pct DESC) AS ranking
+FROM 
+    cte1;
