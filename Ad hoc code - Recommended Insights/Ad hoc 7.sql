@@ -1,43 +1,42 @@
-/* product and category analysis */
-
-with totalrevenue as (
- select 
-  product_name,
-  sum(ir) as total_revenue
- from 
-  revenue_ir_isu
- group by  
-  product_name
+WITH totalrevenue AS (
+    SELECT 
+        product_name,
+        SUM(ir) AS total_revenue
+    FROM 
+        revenue_ir_isu
+    GROUP BY  
+        product_name
 ),
 
-format_data  as (
-select 
- product_name,
- concat(round(sum(total_revenue)/1000000,2), "M") as incremental_revenue,
- total_revenue
-from 
- totalrevenue
-group by 
- product_name
+format_data AS (
+    SELECT 
+        product_name,
+        CONCAT(ROUND(SUM(total_revenue) / 1000000, 2), 'M') AS incremental_revenue,
+        total_revenue
+    FROM 
+        totalrevenue
+    GROUP BY 
+        product_name
 )
+
 (
- select 
-  product_name, 
-  incremental_revenue
- from 
-  format_data
- order by 
-  total_revenue desc
-limit 3
+    SELECT 
+        product_name, 
+        incremental_revenue
+    FROM 
+        format_data
+    ORDER BY 
+        total_revenue DESC
+    LIMIT 3
 )
-union
+UNION
 (
- select 
-  product_name, 
-  incremental_revenue
- from 
-  format_data
- order by 
-  total_revenue asc
-limit 3
+    SELECT 
+        product_name, 
+        incremental_revenue
+    FROM 
+        format_data
+    ORDER BY 
+        total_revenue ASC
+    LIMIT 3
 );
