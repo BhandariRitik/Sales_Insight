@@ -1,14 +1,12 @@
-/* product and category analysis */
-
-select   
- product_name, 
- category,
- concat(round((sum(isu)/1000),2), 'K') as incremental_sold_qty
-from 
- revenue_ir_isu
-group by 
- category, 
- product_name 
-order by 
- round((sum(isu)/1000),2) desc
-limit 5;
+SELECT   
+    product_name, 
+    category,
+    CONCAT(ROUND((SUM(isu) / 1000), 2), 'K') AS incremental_sold_qty
+FROM 
+    revenue_ir_isu
+GROUP BY 
+    category, 
+    product_name 
+ORDER BY 
+    ROUND((SUM(isu) / 1000), 2) DESC
+LIMIT 5;
