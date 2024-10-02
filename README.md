@@ -16,7 +16,10 @@ Sales director Bruce Haryali wanted this immediately but the analytics manager T
 
 ### Data Model
 
-![Screenshot 2024-09-07 214658](https://github.com/user-attachments/assets/374c2017-6ea1-4014-8b0f-4b1b8bb93741)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/374c2017-6ea1-4014-8b0f-4b1b8bb93741" alt="Your Image Description" />
+</p>
+
 
 
 ### Home Page
