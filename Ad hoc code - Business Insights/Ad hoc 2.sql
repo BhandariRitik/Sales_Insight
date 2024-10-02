@@ -1,9 +1,9 @@
-select 
-  city, 
-  count(store_id) as count_of_stores 
-from 
-  dim_stores 
-group by 
-  city 
-order by 
-  count_of_stores desc;
+SELECT 
+    city, 
+    COUNT(store_id) AS count_of_stores 
+FROM 
+    dim_stores 
+GROUP BY 
+    city 
+ORDER BY 
+    count_of_stores DESC;
