@@ -1,7 +1,7 @@
 # AtliQ Mart Sales/Promotions Insight - MYSQL/PowerBI/Canva
 ##### This project is done as part of the codebaiscs resume project challenge
 - Challenge details - [Link](https://codebasics.io/challenge/codebasics-resume-project-challenge)
-- Interactive Dashboard - [Link](https://app.powerbi.com/view?r=eyJrIjoiNmNmZDBhOWQtYWI2Yi00NTMxLTk2MDctM2E3ZTM1ODk0M2M0IiwidCI6IjZmZTcyMzY3LTU1NTAtNDUxYy1iYzA3LWY2OGY1NGE5NmUwMSJ9&pageName=67c02f9d37e733367c9c)
+- Interactive Dashboard - [Link](https://app.powerbi.com/view?r=eyJrIjoiNmNmZDBhOWQtYWI2Yi00NTMxLTk2MDctM2E3ZTM1ODk0M2M0IiwidCI6IjZmZTcyMzY3LTU1NTAtNDUxYy1iYzA3LWY2OGY1NGE5NmUwMSJ9)
 ### Problem Statement
 ##### 
 AtliQ Mart is a retail giant with over 50 supermarkets in the southern region of India. All their 50 stores ran a massive promotion during the Diwali 2023 and Sankranti 2024 (festive time in India) on their AtliQ branded products. Now the sales director wants to understand which promotions did well and which did not so that they can make informed decisions for their next promotional period.  
