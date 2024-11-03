@@ -24,7 +24,8 @@ Sales director Bruce Haryali wanted this immediately but the analytics manager T
 
 ### Home Page
 
-![Screenshot 2024-09-07 214836](https://github.com/user-attachments/assets/e8413df9-65f3-4087-9148-86bd6e218d9d)
+
+![Screenshot 2024-11-03 092537](https://github.com/user-attachments/assets/630ac295-e37d-4b15-a976-302c5f5c900b)
 
 
 
@@ -32,16 +33,19 @@ Sales director Bruce Haryali wanted this immediately but the analytics manager T
 ### Sold Quantity Analysis
 
 
-![Screenshot 2024-09-07 214855](https://github.com/user-attachments/assets/22c7174c-075d-40d3-a59e-2396ca20c9e4)
+![Screenshot 2024-11-03 102100](https://github.com/user-attachments/assets/1aa0a40b-90b2-4528-a04f-66d7474df24d)
+
 
 
 
 ### Revenue Analysis
  
-![Screenshot 2024-09-07 214907](https://github.com/user-attachments/assets/0ebcafb9-d537-4dd1-ab62-a2aeacb4c41a)
+![Screenshot 2024-11-03 102114](https://github.com/user-attachments/assets/9732c7e9-9f43-416f-8ae5-5565c6e37abf)
+
 
 
 ### Promotions Analysis
  
-![Screenshot 2024-09-07 214922](https://github.com/user-attachments/assets/bd7ec528-babe-494e-b6f7-adb09dc2dd3f)
+![Screenshot 2024-11-03 102127](https://github.com/user-attachments/assets/45a5f4a6-730c-430a-bdc2-272db7d56ef6)
+
 
